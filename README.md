@@ -1,4 +1,4 @@
-sensitivity# Physics Practice Assessment
+# Physics Practice Assessment
 ## Plan
 ### Working Title
 The Physics of Solar Panels
