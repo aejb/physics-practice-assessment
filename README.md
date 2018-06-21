@@ -1,3 +1,8 @@
+# Meta
+## Branches
+`master` markdown only
+`latex` current latex implementation
+
 # Physics Practice Assessment
 
 ## Plan
