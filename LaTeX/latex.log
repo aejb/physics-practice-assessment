@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  25 JUN 2018 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  25 JUN 2018 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -56,7 +56,11 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count88
 )
-(./latex.aux)
+(./latex.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `latex.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -71,8 +75,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-
-(/usr/local/texlive/2018basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2018basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
 \scratchdimen=\dimen105
@@ -161,7 +164,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@begin@quote@hook ->\singlespacing 
                                     \small 
-l.22 \begin{quote}
+l.23 \begin{quote}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -172,7 +175,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@begin@quote@hook ->\singlespacing 
                                     \small 
-l.27 \begin{quote}
+l.35 \begin{quote}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -180,24 +183,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
 (/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
  [1
 
 {/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 46.
+(Font)              <7> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 46.
+(Font)              <5> on input line 54.
 
 ! Undefined control sequence.
 \@begin@quote@hook ->\singlespacing 
                                     \small 
-l.50 \begin{quote}
+l.58 \begin{quote}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -208,7 +211,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@begin@quote@hook ->\singlespacing 
                                     \small 
-l.63 \begin{quote}
+l.71 \begin{quote}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -219,7 +222,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@begin@quote@hook ->\singlespacing 
                                     \small 
-l.67 \begin{quote}
+l.75 \begin{quote}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -230,7 +233,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@begin@quote@hook ->\singlespacing 
                                     \small 
-l.72 \begin{quote}
+l.80 \begin{quote}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -238,28 +241,61 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[2] (./latex.aux) ) 
+[2] [3]
+! Undefined control sequence.
+\@begin@quote@hook ->\singlespacing 
+                                    \small 
+l.87 \begin{quote}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (18.81093pt too wide) in paragraph at lines 104--126
+ [][] 
+ []
+
+! Undefined control sequence.
+\@begin@quote@hook ->\singlespacing 
+                                    \small 
+l.156 \begin{quote}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4] [5] (./latex.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1784 strings out of 494091
- 25392 string characters out of 6163523
- 87910 words of memory out of 5000000
- 5459 multiletter control sequences out of 15000+600000
- 8194 words of font info for 29 fonts, out of 8000000 for 9000
+ 1787 strings out of 494091
+ 25423 string characters out of 6163523
+ 98957 words of memory out of 5000000
+ 5461 multiletter control sequences out of 15000+600000
+ 8540 words of font info for 30 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 41i,6n,25p,818b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018basic/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018basic/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018basic/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018basic/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on latex.pdf (2 pages, 90433 bytes).
+ 41i,7n,25p,818b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on latex.pdf (5 pages, 115624 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
