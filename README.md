@@ -22,14 +22,22 @@ This investigation will
 
 ### Apparatus
 `a list of required apparatus`
-- one
-- two
+- Solar Cell
+- RGB LCD Panel
+- Blue tack
+- Crocodile clips and cables
+- Multimeter
+- Light Meter
+
 
 ### Initial Diagram
 `a diagram of the initial experiment arrangement`
+- TODO
 
 ### Risk Assessment
 `a risk assessment`
+- TODO
 
 ### Timeline
 `a rough breakdown of how the two-week period of intensive practical work will be spent`
+- TODO
