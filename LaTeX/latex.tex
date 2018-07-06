@@ -2,10 +2,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{etoolbox}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
 \graphicspath{ {Graphics/} }
 \AtBeginEnvironment{quote}{\singlespacing\small}
 
-\title{Solar Panel Investigation \\ Practice Assessment}
+\title{Solar Cell I-V Curve Investigation \\ Practice Assessment}
 \author{Thomas Bass}
 \begin{document}
 
@@ -18,7 +20,7 @@
 \begin{quote}
 the working title of the investigation
 \end{quote}
-The Physics of Solar Panels
+An investigation to show the I-V Charachteristics of a Solar cell
 
 \section{Aim}
 \begin{quote}
@@ -26,11 +28,12 @@ the aim of the investigation
 \end{quote}
 This investigation will
 \begin{enumerate}
-  \item Investigate the relationship between light intensity and voltage
-  \item Investigate the relationship between light intensity and current
-  \item Deduce the resistance of the solar panel
-  \item Investigate the effect of light colour and voltage
+  \item Investigate the change of potential difference and current as the external resistance changes
+  \item Investigate this with different intensities
 \end{enumerate}
+
+\section{Reaserch}
+As this invetigation is to find the I-V charachteristics of a solar cell, I found
 
 \section{Initial Experiments}
 \begin{quote}
@@ -38,34 +41,31 @@ an outline of the initial experiments
 \end{quote}
 For ease of recording, we want the apparatus to return values that can be accurately and quickly recorded. This means we want the equiptment to return values between 0 and 999, and no more than two decimal places
 \begin{itemize}
-  \item Find an appropriate initial intensity
+  \item Find appropate sensitivity settings for the ammeter and voltmeter
   \begin{itemize}
-    \item First, the LCD panel was connected to power and turned on
-    \item Then, the panel was set to maximim brightness, and the light meter attached
-    \item The light meter was then set to a sensitivity of 2000 lux, as that gave integer values between 0 and 999
+    \item First, the solar cell was set up on a clamp stand, and the circuit constructed
+    \item Then, the lamp was turned on and the light meter placed next to the solar cell
+    \item The resistor was then closed to its lowest resistance, and the voltmeter sensitivity was set to the correct level. The lowest resistance will result in the highest voltage, so we set the voltmeter so that the greatest value of resistsance is not more than the sensitivity level is capable of showing
+    \item The resistor was then opened to its greatest resistance, and the ammeter sensitivity was set in the same way as the voltmeter, as the highest resistance will reuslt in the highest current
   \end{itemize}
-  \item Find appropriate voltmeter sensitivity settings
+  \item Find appropriate variable resistors to use
   \begin{itemize}
-    \item With the panel still turned on, the solar cell was affixed to the LCD panel, using blue tack to minimise light leak
-    \item Then, the panel was set to maximum brightness, and the solar cell was connected to the Multimeter
-    \item The multimeter was adjusted to 200m for voltage, as this sensitivity returned values between 0 and 999, and no more than two decimal places
+    \item Once the Rheostat had been used, other potentiometers were provided
+    \item To see if the range of resistance for these was appropate, each was connected to the current setup, and the maximum and minimum resistance was tested to see if the experiment could provide useful data with the sensitivity options provided by the multimeters
+    \item The 100\Omega and 400\Omega variable resistors were rejected as they would not provide useful results, but the 50\Omega and 10\Omega variable resistors were used
   \end{itemize}
-  \item Find appropriate ammeter sensitivity settings
-  \begin{itemize}
-    \item The multimeter was then set to 20$\mu$ for current, as this sensitivity returned values between 0 and 999, and no more than two decimal places
-  \end{itemize}
+
 \end{itemize}
 \subsection{Initial Experiment Results}
 \begin{table}[!ht]
 \centering
 \caption{Initial Experiment Results}
 \label{Initial Experiment Results}
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|}
 \hline
-\textbf{Brightness}      & \textbf{Light Level} & \textbf{Ambient}   & \textbf{Potential Difference} & \textbf{Current}        \\ \hline
-\textit{{[}arbitrary{]}} & \textit{{[}Lux{]}}   & \textit{{[}Lux{]}} & \textit{{[}Millivolt{]}}      & \textit{{[}Microamp{]}} \\ \hline
-16                       & 248                  & 22                 & 45.2                          & 4.4                     \\ \hline
-0                        & 1                    & 23                 & 0                             & 0                       \\ \hline
+\textbf{Resistor Setting} & \textbf{Potential Difference} & \textbf{Current} \\ \hline
+Open (minimum)            & 105.0                         & 123              \\ \hline
+Closed (maximum)          & 0.0                           & 442              \\ \hline
 \end{tabular}
 \end{table}
 These results show that the sensitivity settings are correct, as the maximum results are within the range of the multimeter, and give results to a suitable decimal place.
@@ -77,22 +77,27 @@ a list of the required apparatus
 \end{quote}
 \begin{enumerate}
   \item Solar Cell
-  \item RGB LCD Panel
-  \item Blue tack
-  \item Crocodile clips and cables
-  \item Multimeter
+  \item Clamp stand
+  \item 2x Multimeters for Voltmeter and Ammeter
+  \item Desk lamp
   \item Light Meter
+  \item Crorodile clips and cables
+  \item Rheostat and Potentiometers
 \end{enumerate}
 
+%   TODO
 \section{Initial Diagram}
 \begin{quote}
 a diagram of the initial experiment
 \end{quote}
+
+%   TODO
 \section{Risk Assessment}
 \begin{quote}
 a risk assessment
 \end{quote}
 
+%   TODO
 \section{Timeline}
 \begin{quote}
 a rough breakdown of how the two-week period of intensive practical work will be spent
@@ -106,10 +111,8 @@ a rough breakdown of how the two-week period of intensive practical work will be
 \end{quote}
 This investigation will
 \begin{enumerate}
-  \item Investigate the proportionality of light intensity and voltage
-  \item Investigate the proportionality of light intensity and current
-  \item Deduce the resistance of the solar panel
-  \item Investigate the effect of light colour and voltage
+  \item Investigate the change of potential difference and current as the external resistance changes
+  \item Investigate this with different intensities
 \end{enumerate}
 
 \section{Results}
@@ -118,92 +121,28 @@ This investigation will
 \centering
 \caption{Measuring change in Potential Difference and Current with change in Light Level}
 \label{my-label}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-\hline
-\textbf{Brightness}      & \textbf{Light Level} & \textbf{Ambient}   & \multicolumn{3}{l|}{\textbf{Potential Difference}} & \multicolumn{3}{l|}{\textbf{Current}}        \\ \hline
-\textit{{[}arbitrary{]}} & \textit{{[}Lux{]}}   & \textit{{[}Lux{]}} & \multicolumn{3}{l|}{\textit{{[}Millivolt{]}}}      & \multicolumn{3}{l|}{\textit{{[}Microamp{]}}} \\ \hline
-16                       & 248                  & 22                 & 45.2            & 44.7            & 44.9           & 4.4            & 4.43         & 4.32         \\ \hline
-15                       & 205                  & 23                 & 38              & 38.1            & 38.1           & 3.69           & 3.71         & 3.71         \\ \hline
-14                       & 169                  & 21                 & 31.7            & 31.7            & 31.6           & 3.08           & 3.08         & 3            \\ \hline
-13                       & 139                  & 22                 & 26.2            & 26.3            & 26.6           & 2.54           & 2.55         & 2.56         \\ \hline
-12                       & 114                  & 23                 & 21.5            & 21.5            & 21.4           & 2.08           & 2.08         & 2.09         \\ \hline
-11                       & 91                   & 23                 & 17.4            & 17.1            & 17.2           & 1.69           & 1.73         & 1.72         \\ \hline
-10                       & 74                   & 22                 & 14.1            & 13.6            & 14             & 1.37           & 1.3          & 1.37         \\ \hline
-9                        & 58                   & 21                 & 11.2            & 11.3            & 11.1           & 1.08           & 1.08         & 1.06         \\ \hline
-8                        & 46                   & 21                 & 8.8             & 8.8             & 8.7            & 0.86           & 0.87         & 0.87         \\ \hline
-7                        & 34                   & 22                 & 6.8             & 6.9             & 7              & 0.66           & 0.66         & 0.65         \\ \hline
-6                        & 25                   & 22                 & 5.1             & 5.1             & 5.2            & 0.5            & 0.54         & 0.54         \\ \hline
-5                        & 19                   & 23                 & 3.9             & 3.7             & 3              & 0.38           & 0.36         & 0.3          \\ \hline
-4                        & 13                   & 24                 & 2.8             & 2.8             & 2.7            & 0.27           & 0.3          & 0.28         \\ \hline
-3                        & 9                    & 21                 & 2               & 1.9             & 1.9            & 0.19           & 0.2          & 0.19         \\ \hline
-2                        & 5                    & 22                 & 1.3             & 1.3             & 1.4            & 0.12           & 0.12         & 0.11         \\ \hline
-1                        & 2                    & 23                 & 0.7             & 0.7             & 0.6            & 0.07           & 0.07         & 0.07         \\ \hline
-0                        & 1                    & 23                 & 0               & 0               & 0              & 0              & 0            & 0            \\ \hline
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\cline{1-2} \cline{4-5} \cline{7-8}
+\multicolumn{2}{|l|}{\textbf{320,000 Lux}} & {\ul }          & \multicolumn{2}{l|}{\textbf{120,000 Lux}}  & {\ul }          & \multicolumn{2}{l|}{\textbf{50,000 Lux}}   \\ \cline{1-2} \cline{4-5} \cline{7-8}
+{\ul \textbf{Current}} & {\ul \textbf{PD}} & {\ul \textbf{}} & {\ul \textbf{Current}} & {\ul \textbf{PD}} & {\ul \textbf{}} & {\ul \textbf{Current}} & {\ul \textbf{PD}} \\ \cline{1-2} \cline{4-5} \cline{7-8}
+\textit{200m}          & \textit{2}        & \textit{}       & \textit{200m}          & \textit{2}        & \textit{}       & \textit{200m}          & \textit{2}        \\ \cline{1-2} \cline{4-5} \cline{7-8}
+114                    & 133               &                 & 54.3                   & 62                &                 & 24.2                   & 28                \\ \cline{1-2} \cline{4-5} \cline{7-8}
+110                    & 198               &                 & 52.7                   & 234               &                 & 24                     & 43                \\ \cline{1-2} \cline{4-5} \cline{7-8}
+105                    & 123               &                 & 48.1                   & 340               &                 & 23.9                   & 145               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+100                    & 291               &                 & 41.2                   & 395               &                 & 23.4                   & 211               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+90                     & 336               &                 & 35.2                   & 423               &                 & 22.7                   & 262               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+80                     & 364               &                 & 30.9                   & 437               &                 & 21.8                   & 298               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+70                     & 386               &                 & 28.3                   & 444               &                 & 21                     & 320               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+60                     & 406               &                 & 26.6                   & 448               &                 & 20.2                   & 338               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+50                     & 419               &                 & 25.4                   & 451               &                 & 19.7                   & 350               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+40                     & 433               &                 & 0                      & 495               &                 & 0                      & 473               \\ \cline{1-2} \cline{4-5} \cline{7-8}
+30                     & 444               &                 &                        &                   &                 &                        &                   \\ \cline{1-2} \cline{4-5} \cline{7-8}
+25.3                   & 449               &                 &                        &                   &                 &                        &                   \\ \cline{1-2} \cline{4-5} \cline{7-8}
+0                      & 451               &                 &                        &                   &                 &                        &                   \\ \cline{1-2} \cline{4-5} \cline{7-8}
 \end{tabular}
 \end{table}
 
-\begin{table}[!ht]
-\centering
-\caption{Measuring change in Potential Difference with change in Wavelength}
-\label{my-label}
-\begin{tabular}{|l|l|l|l|}
-\hline
-\textbf{Wavelength}       & \textbf{Brightness} & \textbf{Current}        & \textbf{Potential Difference} \\ \hline
-\textit{{[}nanometers{]}} & \textit{{[}lux{]}}  & \textit{{[}microamp{]}} & \textit{{[}millivolt{]}}      \\ \hline
-400                       & 34                  & 0.88                    & 9                             \\ \hline
-425                       & 50                  & 1.2                     & 12.3                          \\ \hline
-450                       & 55                  & 1.18                    & 12.1                          \\ \hline
-475                       & 120                 & 2.04                    & 21                            \\ \hline
-500                       & 155                 & 2.22                    & 22.8                          \\ \hline
-525                       & 149                 & 2.04                    & 21                            \\ \hline
-550                       & 166                 & 2.51                    & 25.7                          \\ \hline
-575                       & 194                 & 3.26                    & 33.4                          \\ \hline
-600                       & 130                 & 2.56                    & 26.3                          \\ \hline
-625                       & 75                  & 1.62                    & 16.7                          \\ \hline
-650                       & 60                  & 1.62                    & 16.7                          \\ \hline
-675                       & 60                  & 1.62                    & 16.7                          \\ \hline
-700                       & 60                  & 1.62                    & 16.7                          \\ \hline
-725                       & 40                  & 1.06                    & 10.9                          \\ \hline
-750                       & 21                  & 0.61                    & 6.3                           \\ \hline
-775                       & 9                   & 0.29                    & 3                             \\ \hline
-\end{tabular}
-\end{table}
-\section{Data Processing}
-\text{These results can be plotted as line graphs. First, I plotted Brightness against Light Level from Table 2, to see if the linear unit increase of Brightness corresponds to a linear incrase in light level \\}
-\includegraphics[scale=0.4]{Lux_v_Brightness.jpg}
-\text{\\Then, as we have multiple results, I processed them to generate averages, ranges, and error bars}
-
-% Please add the following required packages to your document preamble:
-
-\begin{table}[]
-\centering
-\caption{Processed data showing the averages and errors}
-\label{my-label}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-\hline
-\multirow{}{}{\textbf{\begin{tabular}[c]{@{}l@{}}Light\\ level\end{tabular}}} & \textbf{PD}           & \textbf{CUR}          & \textbf{PD}           & \textbf{CUR}          & \textbf{PD}           & \textbf{PD}           & \textbf{CUR}          & \textbf{CUR}          \\ \cline{2-9}
-                                                                                & \textit{\textbf{Avg}} & \textit{\textbf{Avg}} & \textit{\textbf{Ran}} & \textit{\textbf{Ran}} & \textit{\textbf{Max}} & \textit{\textbf{Min}} & \textit{\textbf{Max}} & \textit{\textbf{Min}} \\ \hline
-248                                                                             & 44.93                 & 4.38                  & 0.5                   & 0.11                  & 45.18                 & 44.68                 & 4.44                  & 4.33                  \\ \hline
-205                                                                             & 38.07                 & 3.7                   & 0.1                   & 0.02                  & 38.12                 & 38.02                 & 3.71                  & 3.69                  \\ \hline
-169                                                                             & 31.67                 & 3.05                  & 0.1                   & 0.08                  & 31.72                 & 31.62                 & 3.09                  & 3.01                  \\ \hline
-139                                                                             & 26.37                 & 2.55                  & 0.4                   & 0.02                  & 26.57                 & 26.17                 & 2.56                  & 2.54                  \\ \hline
-114                                                                             & 21.47                 & 2.08                  & 0.1                   & 0.01                  & 21.52                 & 21.42                 & 2.09                  & 2.08                  \\ \hline
-91                                                                              & 17.23                 & 1.71                  & 0.3                   & 0.04                  & 17.38                 & 17.08                 & 1.73                  & 1.69                  \\ \hline
-74                                                                              & 13.9                  & 1.35                  & 0.5                   & 0.07                  & 14.15                 & 13.65                 & 1.39                  & 1.32                  \\ \hline
-58                                                                              & 11.2                  & 1.07                  & 0.2                   & 0.02                  & 11.3                  & 11.1                  & 1.08                  & 1.06                  \\ \hline
-46                                                                              & 8.77                  & 0.87                  & 0.1                   & 0.01                  & 8.82                  & 8.72                  & 0.88                  & 0.87                  \\ \hline
-34                                                                              & 6.9                   & 0.66                  & 0.2                   & 0.01                  & 7                     & 6.8                   & 0.67                  & 0.66                  \\ \hline
-25                                                                              & 5.13                  & 0.53                  & 0.1                   & 0.04                  & 5.18                  & 5.08                  & 0.55                  & 0.51                  \\ \hline
-19                                                                              & 3.53                  & 0.35                  & 0.9                   & 0.08                  & 3.98                  & 3.08                  & 0.39                  & 0.31                  \\ \hline
-13                                                                              & 2.77                  & 0.28                  & 0.1                   & 0.03                  & 2.82                  & 2.72                  & 0.3                   & 0.27                  \\ \hline
-9                                                                               & 1.93                  & 0.19                  & 0.1                   & 0.01                  & 1.98                  & 1.88                  & 0.2                   & 0.19                  \\ \hline
-5                                                                               & 1.33                  & 0.12                  & 0.1                   & 0.01                  & 1.38                  & 1.28                  & 0.13                  & 0.12                  \\ \hline
-2                                                                               & 0.67                  & 0.07                  & 0.1                   & 0                     & 0.72                  & 0.62                  & 0.07                  & 0.07                  \\ \hline
-1                                                                               & 0                     & 0                     & 0                     & 0                     & 0                     & 0                     & 0                     & 0                     \\ \hline
-\end{tabular}
-\end{table}
-
-\includegraphics[scale=0.4]{pd_error_bars}
+\includegraphics[scale=0.4]{ivcurve1}
 
 
 \section{Summary}
